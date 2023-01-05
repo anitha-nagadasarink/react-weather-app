@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -32,7 +28,48 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+.cloud-sky {
+  background-image: url("../src/images/cloud-sky.jpg");
+  /* animation: bacground-scroll infinite 60s linear; */
+}
+
+.sunny-sky {
+  background-image: url("../src/images/sun-sky.jpg");
+  /* animation: bacground-scroll infinite 20s linear; */
+}
+
+.snow-sky {
+  background-image: url("../src/images/snow-sky.jpg");
+}
+
+.smoke-sky {
+  background-image: url("../src/images/smoke-sky.jpg");
+}
+
+.rain-sky {
+  background-image: url("../src/images/rain-sky.jpg");
+}
+
+.drizzle-sky {
+  background-image: url("../src/images/drizle-sky.jpg");
+}
+
+.thunder-sky {
+  background-image: url("../src/images/thunder-sky.jpg");
+}
+
+@keyframes bacground-scroll {
+  from {
+    background-position-x: 0px;
+  }
+
+  to {
+    background-position-x: 1400px;
   }
 }

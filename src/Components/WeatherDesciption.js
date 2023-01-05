@@ -1,17 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 
 
 const WeatherDesciption = ({ weatherData }) => {
-
-  const [weatherIcon] = useState(`${process.env.REACT_APP_ICON_URL}/${weatherData.weather[0]["icon"]}@2x.png`);
-
   return (
     <section>
       <div className="flex justify-start my-8 ">
         <div className="flex border-b-2 lg:border-r-2 lg:border-b-0 pr-8 mr-8">
           <div className="text-6xl">
             <img
-              src={weatherIcon}
+              src={`${process.env.REACT_APP_ICON_URL}${weatherData.weather[0].icon}@2x.png`}
               alt="Weather Icon"
               className="w-[130px]"
             />
