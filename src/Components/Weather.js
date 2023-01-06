@@ -9,7 +9,7 @@ const Weather = ({ weatherData }) => {
 
   return (
     <section
-      className={`flex items-top justify-center min-w-full h-screen text-white pt-14 
+      className={`flex items-top justify-center min-w-full h-screen text-white pt-7 lg:pt-14 
       ${weatherData.weather[0].id >= 801 && weatherData.weather[0].id <= 804 ? "cloud-sky" :
           weatherData.weather[0].id >= 600 && weatherData.weather[0].id <= 622 ? "snow-sky" :
             weatherData.weather[0].id >= 701 && weatherData.weather[0].id <= 781 ? "smoke-sky" :

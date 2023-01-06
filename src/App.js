@@ -85,7 +85,7 @@ function App() {
         </div>
       ) :
         (
-          <div className="h-min-100 h-screen bg-gradient-to-r from-cyan-500 to-blue-500 p-7 text-white text-2xl">
+          <div className="h-min-100 h-screen bg-gradient-to-r from-cyan-500 to-blue-500 p-3 lg:p-7 text-white text-xl lg:text-2xl">
             Invalid City to fecth the Weather Data
           </div>
         )

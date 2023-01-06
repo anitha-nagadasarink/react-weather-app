@@ -6,9 +6,9 @@ const WeatherHeader = ({ weatherData }) => {
 
   return (
     <header className="">
-      <h1 className="text-3xl font-medium text-left">{weatherData.name}, {weatherData.sys.country}</h1>
+      <h1 className="text-xl lg:text-3xl font-medium text-left">{weatherData.name}, {weatherData.sys.country}</h1>
 
-      <p className="text-2xl font-semibod text-left">{moment().format('dddd')}, {moment().format('LLL')}</p>
+      <p className="text-xl text-2xl font-semibod text-left">{moment().format('dddd')}, {moment().format('LLL')}</p>
 
 
       {
