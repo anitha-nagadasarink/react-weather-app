@@ -21,30 +21,30 @@ const WeatherDesciption = ({ weatherData }) => {
 
         <div className="flex basis-1 lg:basis-1/2  flex-wrap">
 
-          <div className="w-1/3">
+          <div className="w-full lg:w-1/3">
             <h5 className="text-xl lg:text-2xl">{weatherData.main.temp_max}&deg;</h5>
             <p className="text-md lg:text-lg text-gray-200"> High</p>
           </div>
 
-          <div className="w-1/3 mb-4">
+          <div className="w-full lg:w-1/3 mb-4">
             <h5 className="text-xl lg:text-2xl">{new Date(weatherData.sys.sunrise * 1000).toLocaleTimeString('en-IN')}</h5>
             <p className="text-md lg:text-lg text-gray-200">Sunrise</p>
           </div>
 
-          <div className="w-1/3">
+          <div className="w-full lg:w-1/3">
             <h5 className="text-xl lg:text-2xl">{weatherData.main.humidity}%</h5>
             <p className="text-md lg:text-lg text-gray-200"> Humidity</p>
           </div>
-          <div className="w-1/3">
+          <div className="w-full lg:w-1/3">
             <h5 className="text-xl lg:text-2xl">{weatherData.main.temp_min}&deg;</h5>
             <p className="text-md lg:text-lg text-gray-200"> Low</p>
           </div>
 
-          <div className="w-1/3">
+          <div className="w-full lg:w-1/3">
             <h5 className="text-xl lg:text-2xl">{new Date(weatherData.sys.sunset * 1000).toLocaleTimeString("en-IN")}</h5>
             <p className="text-md lg:text-lg text-gray-200"> Sunrset</p>
           </div>
-          <div className="w-1/3">
+          <div className="w-full lg:w-1/3">
             <h5 className="text-xl lg:text-2xl">{weatherData.wind.speed}mph</h5>
             <p className="text-md lg:text-lg text-gray-200">Wind</p>
           </div>

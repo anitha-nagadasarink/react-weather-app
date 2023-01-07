@@ -18,7 +18,7 @@ const Weather = ({ weatherData }) => {
                   weatherData.weather[0].id >= 200 && weatherData.weather[0].id <= 232 ? "thunder-sky" :
                     "sunny-sky"}`}>
 
-      <div div className="basis-9/12" >
+      <div div className="basis-full lg:basis-9/12" >
         <WeatherHeader weatherData={weatherData} />
 
         <WeatherDesciption weatherData={weatherData} />
