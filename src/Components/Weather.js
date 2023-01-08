@@ -1,6 +1,5 @@
 import React from "react";
 import WeatherHeader from "./WeatherHeader";
-
 import WeatherDesciption from "./WeatherDesciption";
 
 
@@ -20,13 +19,9 @@ const Weather = ({ weatherData }) => {
 
       <div div className="basis-full lg:basis-9/12" >
         <WeatherHeader weatherData={weatherData} />
-
         <WeatherDesciption weatherData={weatherData} />
-      </div >
-
-
-
-    </section >
+      </div>
+    </section>
   )
 }
 
