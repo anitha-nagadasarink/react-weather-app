@@ -50,7 +50,6 @@ const WeatherDesciption = ({ weatherData }) => {
           </div>
         </div>
       </div>
-
     </section>
   );
 
