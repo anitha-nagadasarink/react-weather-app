@@ -1,6 +1,6 @@
 import React from "react";
 
-
+// Anurag Sir Context API and Stat variable and Build and deploy
 const WeatherDesciption = ({ weatherData }) => {
   return (
     <section>

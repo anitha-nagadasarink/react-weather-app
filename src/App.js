@@ -44,6 +44,7 @@ function App() {
 
   useEffect(() => {
     fecthWeatherData();
+    // eslint-disable-next-line
   }, [lat, long]);
 
   const handleSubmit = (e) => {
@@ -98,13 +99,4 @@ export default App;
 
 
 
-{
 
-// https://blog.learncodeonline.in/razorpay-integration-in-react
-  //   Open learn.ineuron.ai website
-
-  // Go to the course details, open the dashboard of the course, right side panel look of “Assignments & Projects”
-
-  // Respective assignment detials are given, click on each of them and provide your project details as github link or zip file
-
-}
