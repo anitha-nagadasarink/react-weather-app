@@ -10,6 +10,8 @@ function App() {
   const [city, setCity] = useState("");
 
 
+
+
   // Fetch Data from Weather API
 
   const fecthWeatherData = async () => {
@@ -55,39 +57,33 @@ function App() {
 
   }
 
-  const refresh = () => {
-    window.location.reload();
-  }
-
   return (
     <main className="App">
       <div className="flex align-center justify-center bg-gradient-to-b from-cyan-500 to-sky-700 p-4">
         <form onSubmit={handleSubmit}>
           <input
             type="text"
-            placeholder="Enter the City"
+            placeholder="Check You're City Weather"
             name="city"
-            className="p-2 mr-2 rounded-md outline-none w-58"
+            className="p-2 mr-2 rounded-md outline-none w-52"
             value={city}
             onChange={(e) => setCity(e.target.value)}
           />
           <button type="submit" className="bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-2 rounded-md text-white">Search</button>
         </form>
-        <button className="button ml-10 text-white text-4xl" icon='refresh' onClick={refresh} >↻</button>
+
       </div>
 
 
       {(typeof data.main != "undefined") ? (
-
         <div>
-
 
           <Weather weatherData={data} />
         </div>
       ) :
         (
           <div className="h-min-100 h-screen bg-gradient-to-r from-cyan-500 to-blue-500 p-3 lg:p-7 text-white text-xl lg:text-2xl">
-            Invalid City to fecth the Weather Data
+            Enter You're City Name to Fetch Weather Data
           </div>
         )
       }
